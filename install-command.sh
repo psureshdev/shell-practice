@@ -10,7 +10,7 @@ else
    echo "installing with root user"
 fi
 
-dnf remove treee -y
+dnf install treee -y
 
 if [ $? -eq 0 ]
 then 
