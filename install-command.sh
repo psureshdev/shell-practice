@@ -10,7 +10,15 @@ else
    echo "installing with root user"
 fi
 
-dnf install treee -y
+dnf list installed tree
+
+if [ $? -eq 0 ]
+then 
+echo "tree installed"
+exit 1
+else
+echo "tree installing"
+dnf install tree -y
 
 if [ $? -eq 0 ]
 then 
@@ -19,3 +27,4 @@ else
    echo "tree failure"
    exit 1
 fi
+
