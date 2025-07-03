@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "$@"
+echo "number of variable passed $@"
