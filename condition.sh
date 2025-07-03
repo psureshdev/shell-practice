@@ -12,4 +12,9 @@ else
 echo "given $number greaterthan 10"
 fi
 
-
+if [ $number -ne 10 ]
+then 
+    echo "given $number is not equal to 10"
+else
+    echo "given $number is equal to 10"
+fi
