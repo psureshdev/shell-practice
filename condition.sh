@@ -7,7 +7,9 @@
 number=$1
 if [ $number -lt 10 ]
 then 
-echo "given number less than 10"
+echo "given $number less than 10"
 else
-echo "given number greaterthan 10"
+echo "given $number greaterthan 10"
 fi
+
+
