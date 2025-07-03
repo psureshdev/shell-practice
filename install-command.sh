@@ -11,3 +11,11 @@ else
 fi
 
 dnf install tree -y
+
+if [ $? -eq 0]
+then 
+    echo "tree success"
+else
+   echo "tree failure"
+   exit 1
+fi
