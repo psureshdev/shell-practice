@@ -14,11 +14,11 @@ dnf list installed tree
 
 if [ $? -eq 0 ]
 then 
-echo "tree installed"
-exit 1
+  echo "tree installed"
+  exit 1
 else
-echo "tree installing"
-dnf install tree -y
+  echo "tree installing"
+  dnf install tree -y
 
 if [ $? -eq 0 ]
 then 
