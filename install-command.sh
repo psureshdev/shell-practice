@@ -12,7 +12,7 @@ fi
 
 dnf install tree -y
 
-if [ $? -eq 0]
+if [ $? -eq 0 ]
 then 
     echo "tree success"
 else
