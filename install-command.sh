@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 
-if [ $userid -nq 0 ]
+if [ $userid -ne 0 ]
 then 
     echo "error: pls run with root user"
 else
