@@ -19,6 +19,7 @@ then
 else
   echo "tree installing"
   dnf install tree -y
+fi
 
 if [ $? -eq 0 ]
 then 
@@ -26,5 +27,4 @@ then
 else
    echo "tree failure"
    exit 1
-fi
-
+   fi
