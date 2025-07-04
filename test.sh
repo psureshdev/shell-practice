@@ -12,4 +12,4 @@ else
 fi
 
 #tree installing
-dnf list installed trees
+dnf list installed tree
