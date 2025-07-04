@@ -40,5 +40,5 @@ then
 dnf install nginx -y
 validate $? nginx
 else 
-echo " tree installed noting to do"
+echo " nginx installed noting to do"
 fi
