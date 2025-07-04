@@ -31,4 +31,16 @@ then
     validate $? tree
 else 
    echo "tree is installed"
+   exit 1
+fi
+
+#nginx installing
+dnf list installed nginx
+if [ $? -ne 0 ]
+then
+    echo "nginx is not installed"
+    dnf install nginx -y
+    validate $? nginx
+else 
+   echo "nginx is installed"
 fi
