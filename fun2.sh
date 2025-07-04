@@ -15,10 +15,10 @@ dnf list installed tree
 if [ $? -ne 0 ]
 then 
   echo "tree not installed"
+dnf install tree -y
 else
   echo "tree installed"
   exit 1
-  dnf install tree -y
 fi
 
 if [ $? -eq 0 ]
