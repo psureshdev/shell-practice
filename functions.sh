@@ -38,12 +38,3 @@ then
 dnf install nginx -y
 validate $? nginx
 fi
-
-#java
-dnf list installed java
-if [ $? -ne 0 ]
-then 
-  echo "java not installed"
-dnf install java -y
-validate $? tree
-fi
