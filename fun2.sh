@@ -18,7 +18,6 @@ then
 dnf install tree -y
 else
   echo "tree installed"
-  exit 1
 fi
 
 if [ $? -eq 0 ]
