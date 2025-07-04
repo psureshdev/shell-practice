@@ -31,7 +31,6 @@ then
     validate $? tree
 else 
    echo "tree is installed"
-   exit 1
 fi
 
 #nginx installing
