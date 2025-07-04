@@ -28,3 +28,41 @@ else
    echo "tree failure"
    exit 1
 fi
+
+#nginx
+dnf list installed nginx
+if [ $? -ne 0 ]
+then 
+  echo "nginx not installed"
+dnf install nginx -y
+else
+  echo "nginx installed"
+  exit 1
+fi
+
+if [ $? -eq 0 ]
+then 
+    echo "nginx success"
+else
+   echo "nginx failure"
+   exit 1
+fi
+
+#kava
+dnf list installed openjdk-11-jdk
+if [ $? -ne 0 ]
+then 
+  echo "java not installed"
+dnf install openjdk-11-jdk -y
+else
+  echo "java installed"
+  exit 1
+fi
+
+if [ $? -eq 0 ]
+then 
+    echo "java success"
+else
+   echo "java failure"
+   exit 1
+fi
