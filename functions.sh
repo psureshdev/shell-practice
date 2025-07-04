@@ -28,6 +28,8 @@ then
   echo "tree not installed"
 dnf install tree -y
 validate $? tree
+else
+  echo " tree installed noting to do"
 fi
 
 #nginx
@@ -37,4 +39,6 @@ then
   echo "nginx not installed"
 dnf install nginx -y
 validate $? nginx
+else 
+echo " tree installed noting to do"
 fi
