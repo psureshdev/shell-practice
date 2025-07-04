@@ -15,10 +15,10 @@ dnf list installed tree
 if [ $? -ne 0 ]
 then 
   echo "tree not installed"
+dnf install tree -y
 else
   echo "tree installed"
   exit 1
-  dnf install tree -y
 fi
 
 if [ $? -eq 0 ]
@@ -34,10 +34,10 @@ dnf list installed nginx
 if [ $? -ne 0 ]
 then 
   echo "nginx not installed"
+dnf install nginx -y
 else
   echo "nginx installed"
   exit 1
-dnf install nginx -y
 fi
 
 if [ $? -eq 0 ]
@@ -46,17 +46,17 @@ then
 else
    echo "nginx failure"
    exit 1
-   fi
+fi
 
 #java
-dnf list installed openjdk-11-jdk
+dnf list installed java
 if [ $? -ne 0 ]
 then 
   echo "java not installed"
+dnf install java -y
 else
   echo "java installed"
   exit 1
-dnf install openjdk-11-jdk -y
 fi
 
 if [ $? -eq 0 ]
